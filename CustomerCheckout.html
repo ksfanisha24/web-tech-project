@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="CustomerCheckout.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Complete your delivery information.</p>
+    </div>
+
+ 
+    <div class="navbar">
+        <a href="CustomerHome.html">Home</a>
+        <a href="CustomerProducts.html">Products</a>
+        <a href="CustomerCart.html">Cart</a>
+        <a href="CustomerCheckout.html" class="active">Checkout</a>
+        <a href="CustomerProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Checkout</h2>
+
+        <p class="description">
+            Enter your delivery details and review your order.
+        </p>
+
+        <form action="" method="post" class="checkoutform">
+
+            <h3>Delivery Information</h3>
+
+            <table>
+
+
+                <tr>
+                    <td>
+                        <label for="name">Delivery Name</label>
+                    </td>
+
+                    <td>
+                        <input
+                            type="text"
+                            id="name"
+                            name="delivery_name"
+                            placeholder="Enter receiver's name"
+                            required>
+                    </td>
+                </tr>
+
+       
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number</label>
+                    </td>
+
+                    <td>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="address">Delivery Address</label>
+                    </td>
+
+                    <td>
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            cols="30"
+                            placeholder="House, road, area and city"
+                            required></textarea>
+                    </td>
+                </tr>
+
+        
+                <tr>
+                    <td>
+                        <label for="payment">Payment Method</label>
+                    </td>
+
+                    <td>
+                        <select
+                            id="payment"
+                            name="payment_method"
+                            required>
+
+                            <option value="">Select Payment Method</option>
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="bkash">bKash</option>
+                            <option value="nagad">Nagad</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+
+          
+            <div class="ordersummary">
+
+                <h3>Order Summary</h3>
+
+                <p>Cotton T-Shirt × 2: <b>৳1,300</b></p>
+                <p>Casual Dress × 1: <b>৳1,850</b></p>
+
+                <p>Products Subtotal: <b>৳3,150</b></p>
+                <p>Delivery Charge: <b>৳100</b></p>
+
+                <p class="total">Total Amount: ৳3,250</p>
+
+            </div>
+
+          
+            <div class="buttonsection">
+                <button type="submit">Place Order</button>
+            </div>
+
+        </form>
+
+        
+        <p class="backlink">
+            <a href="CustomerCart.html">Back to Cart</a>
+        </p>
+
+    </div>
+
+   
+    <div class="footer">
+        <p>Checkout | All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="CustomerCart.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Review your products before checkout.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="CustomerHome.html">Home</a>
+        <a href="CustomerProducts.html">Products</a>
+        <a href="CustomerCart.html" class="active">Cart</a>
+        <a href="CustomerProfile.html">My Profile</a>
+        <a href="CustomerLogin.html">Login</a>
+        <a href="CustomerRegistration.html">Register</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Shopping Cart</h2>
+
+        <p class="description">
+            Check your selected products and order total.
+        </p>
+        <div class="cartcontainer">
+
+            <div class="tablecontainer">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Cotton T-Shirt -->
+                        <tr>
+                            <td>
+                                <img
+                                    src="tshirt.jpg"
+                                    alt="Cotton T-shirt">
+
+                                <p><b>Cotton T-Shirt</b></p>
+                                <p>Size: M</p>
+                            </td>
+
+                            <td>৳650</td>
+
+                            <td>
+                                <label for="tshirtquantity">
+                                    Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="tshirtquantity"
+                                    name="tshirt_quantity"
+                                    value="2"
+                                    min="1"
+                                    step="1">
+                            </td>
+
+                            <td>৳1,300</td>
+
+                            <td>
+                                <button type="button" class="removebutton">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Casual Dress -->
+                        <tr>
+                            <td>
+                                <img
+                                    src="dress.jpg"
+                                    alt="Casual dress">
+
+                                <p><b>Casual Dress</b></p>
+                                <p>Size: S</p>
+                            </td>
+
+                            <td>৳1,850</td>
+
+                            <td>
+                                <label for="dressquantity">
+                                    Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="dressquantity"
+                                    name="dress_quantity"
+                                    value="1"
+                                    min="1"
+                                    step="1">
+                            </td>
+
+                            <td>৳1,850</td>
+
+                            <td>
+                                <button type="button" class="removebutton">
+                                    Remove
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+           
+            <div class="ordersummary">
+
+                <h3>Order Summary</h3>
+
+                <p>Products Subtotal: <b>৳3,150</b></p>
+                <p>Delivery Charge: <b>৳100</b></p>
+
+                <p class="total">Total Amount: ৳3,250</p>
+
+                <a href="CustomerCheckout.html" class="checkoutbutton">
+                    Proceed to Checkout
+                </a>
+
+            </div>
+
+        </div>
+
+    
+        <p class="backlink">
+            <a href="CustomerProducts.html">Continue Shopping</a>
+        </p>
+
+    </div>
+
+   
+    <div class="footer">
+        <p>Shopping Cart | All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

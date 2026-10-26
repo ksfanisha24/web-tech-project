@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Customer Home</title>
+
+    <link rel="stylesheet" href="CustomerHome.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Comfortable clothing for your everyday style.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="CustomerHome.html" class="active">Home</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="CustomerCart.html">Cart</a>
+        <a href="CustomerProfile.html">My Profile</a>
+        <a href="CustomerLogin.html">Login</a>
+        <a href="CustomerRegistration.html">Register</a>
+    </div>
+
+    <div class="main">
+
+        <div class="search">
+            <label for="search">Search Products:</label>
+
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search clothing">
+
+            <button type="button">Search</button>
+        </div>
+
+        <div class="banner">
+            <h2>Welcome</h2>
+            <p>Explore our collections and find your favorite style.</p>
+            <a href="CustomerProducts.html">Explore Products</a>
+        </div>
+
+        <h2>Our Categories</h2>
+
+        <div class="row">
+
+            <div class="category" id="men">
+                <h3>Men's Clothing</h3>
+                <p>T-shirts, shirts and trousers.</p>
+                <a href="CustomerProducts.html#men">View Collection</a>
+            </div>
+
+            <div class="category" id="women">
+                <h3>Women's Clothing</h3>
+                <p>Tops, dresses and other styles.</p>
+                <a href="CustomerProducts.html#women">View Collection</a>
+            </div>
+
+        </div>
+
+        <h2 id="products">Featured Products</h2>
+
+        <div class="row">
+            <div class="product">
+                <img src="tshirt.jpg" alt="Cotton T-shirt">
+
+                <h3>Cotton T-Shirt</h3>
+                <p>Men's Clothing</p>
+                <p class="price">৳650</p>
+
+                <a href="CustomerProductDetails.html#tshirt">
+                    View Details
+                </a>
+            </div>
+
+            <div class="product">
+                <img src="shirt.jpg" alt="Casual shirt">
+
+                <h3>Casual Shirt</h3>
+                <p>Men's Clothing</p>
+                <p class="price">৳1,250</p>
+
+                <a href="CustomerProductDetails.html#shirt">
+                    View Details
+                </a>
+            </div>
+
+            <div class="product">
+                <img src="dress.jpg" alt="Casual dress">
+
+                <h3>Casual Dress</h3>
+                <p>Women's Clothing</p>
+                <p class="price">৳1,850</p>
+
+                <a href="CustomerProductDetails.html#dress">
+                    View Details
+                </a>
+            </div>
+
+            <div class="picbox">
+                <img src="pp2.png" alt="Decorative sewing machine">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Customer Home | All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

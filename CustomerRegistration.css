@@ -1,0 +1,117 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fff3f5;
+    color: #2b3028;
+    margin: 20px;
+}
+
+h1, h2, p {
+    line-height: 1.5;
+}
+
+h1 {
+    color: #5f8b55;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#para2 {
+    padding: 10px;
+    background-color: #e3efdc;
+    color: #2b3028;
+}
+
+.class1 {
+    color: #e47e97;
+}
+
+#para3 {
+    width: 320px;
+    max-width: 100%;
+    padding: 20px;
+    border: 2px solid #ead3d9;
+    margin: 15px auto;
+    background-color: #e47e97;
+    color: white;
+}
+
+.registrationform {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ead3d9;
+    background-color: #fffdfb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 185px;
+    max-width: 100%;
+}
+
+textarea {
+    width: 230px;
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #e47e97;
+    color: white;
+    border: 1px solid #ead3d9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c95778;
+}
+
+.resetbutton {
+    background-color: white;
+    color: #c95778;
+    border: 1px solid #e47e97;
+}
+
+.resetbutton:hover {
+    background-color: #fff3f5;
+}
+
+/* LOGIN LINK */
+.loginlink {
+    color: #2b3028;
+    text-align: center;
+}
+
+a {
+    color: #5f8b55;
+}
+
+a:hover {
+    color: #34513d;
+}
