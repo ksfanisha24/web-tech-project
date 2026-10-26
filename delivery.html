@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/delivery.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <h2>Delivery Information</h2>
+        <p>Staff ID: 24-59974-3</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff.html">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="notes.html">Processing Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed Orders</a>
+        <a href="profile.html">My Profile</a>
+    </div>
+
+    <div class="content">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&h=200&fit=crop" alt="Delivery Packages">
+        </div>
+
+        <div class="row">
+            <div class="column side">
+                <h2>Add Delivery Information</h2>
+                <form>
+                    <label for="orderid">Order ID:</label>
+                    <input type="text" id="orderid" name="orderid" placeholder="Enter order ID" required>
+
+                    <label for="customer">Customer Name:</label>
+                    <input type="text" id="customer" name="customer" placeholder="Enter customer name" required>
+
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Enter delivery address" required></textarea>
+
+                    <label for="phone">Customer Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+
+                    <label for="date">Expected Delivery Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="status">Delivery Status:</label>
+                    <select id="status" name="status">
+                        <option>Pending</option>
+                        <option>Processing</option>
+                        <option>Delivered</option>
+                    </select>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Save Delivery Information">
+                        <input type="reset" value="Clear">
+                    </div>
+                </form>
+            </div>
+
+            <div class="column middle">
+                <h2>Delivery Records</h2>
+                <table>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>ORD001</td>
+                        <td>Rahim Ahmed</td>
+                        <td>Dhaka, Bangladesh</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>ORD002</td>
+                        <td>Karim Hasan</td>
+                        <td>Uttara, Dhaka</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>ORD003</td>
+                        <td>Nusrat Jahan</td>
+                        <td>Mirpur, Dhaka</td>
+                        <td>Delivered</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Clothing Brand Management System</p>
+        <p>Staff Module | 24-59974-3</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

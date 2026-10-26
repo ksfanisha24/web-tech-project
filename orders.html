@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Orders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <h2>Customer Orders</h2>
+        <p>Staff ID: 24-59974-3</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff.html">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="notes.html">Processing Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed Orders</a>
+        <a href="profile.html">My Profile</a>
+    </div>
+
+    <div class="content">
+
+        <div class="card">
+            <h2>All Customer Orders</h2>
+            <p>View customer orders and select their current status.</p>
+
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>ORD001</td>
+                    <td>Rahim Ahmed</td>
+                    <td>Casual Shirt</td>
+                    <td>2</td>
+                    <td>15-10-2026</td>
+                    <td>
+                        <select>
+                            <option>Pending</option>
+                            <option>Processing</option>
+                            <option>Delivered</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="alt">
+                    <td>ORD002</td>
+                    <td>Karim Hasan</td>
+                    <td>Denim Jacket</td>
+                    <td>1</td>
+                    <td>16-10-2026</td>
+                    <td>
+                        <select>
+                            <option>Processing</option>
+                            <option>Pending</option>
+                            <option>Delivered</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ORD003</td>
+                    <td>Nusrat Jahan</td>
+                    <td>Summer Dress</td>
+                    <td>1</td>
+                    <td>17-10-2026</td>
+                    <td>
+                        <select>
+                            <option>Delivered</option>
+                            <option>Pending</option>
+                            <option>Processing</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="button-row">
+                <button type="button">Update Order Status</button>
+            </div>
+            <p>Note: This is a frontend demonstration. Status changes are not saved.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Clothing Brand Management System</p>
+        <p>Staff Module | 24-59974-3</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
