@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Manage Users</title>
+
+    <link rel="stylesheet" href="ManageUsers.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Manage Users</h1>
+        <p>View and manage all system users</p>
+    </div>
+
+    <div class="topnav">
+        <a href="AdminDashboard.html">Dashboard</a>
+        <a href="ManageUsers.html">Manage Users</a>
+        <a href="ManageProducts.html">Manage Products</a>
+        <a href="ManageOrders.html">Manage Orders</a>
+        <a href="AdminProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <div class="pageheading">
+            <h2>User Directory</h2>
+            <p>Manage customers, managers and staff from one place.</p>
+            <a href="index.html" class="addbutton">+ Add New User</a>
+        </div>
+
+        <div class="row">
+
+            <div class="summary customers">
+                <h3>Customers</h3>
+                <p>250</p>
+            </div>
+
+            <div class="summary managers">
+                <h3>Managers</h3>
+                <p>12</p>
+            </div>
+
+            <div class="summary staff">
+                <h3>Staff</h3>
+                <p>45</p>
+            </div>
+
+        </div>
+
+        <div class="filtersection">
+
+            <h3>Filter Users</h3>
+
+            <form action="" method="get">
+
+                <label for="role">Select Role:</label>
+
+                <select id="role" name="role">
+                    <option value="all">All Users</option>
+                    <option value="customer">Customer</option>
+                    <option value="manager">Manager</option>
+                    <option value="staff">Staff</option>
+                </select>
+
+                <button type="submit">Filter</button>
+
+            </form>
+
+        </div>
+
+        <div class="tablesection">
+
+            <h3>All Users</h3>
+
+            <div class="tablecontainer">
+
+                <table>
+
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>101</td>
+                        <td>Raima Simin</td>
+                        <td>raima@gmail.com</td>
+                        <td>Customer</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="deactivate">Deactivate</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Urboshi</td>
+                        <td>urbo@gmail.com</td>
+                        <td>Manager</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="deactivate">Deactivate</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Fahim Kazi</td>
+                        <td>fahim@gmail.com</td>
+                        <td>Staff</td>
+                        <td><span class="inactive">Inactive</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="activate">Activate</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>104</td>
+                        <td>Maliha Tahsin</td>
+                        <td>Maliha@gmail.com</td>
+                        <td>Customer</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="deactivate">Deactivate</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>105</td>
+                        <td>Jabonnasa</td>
+                        <td>nasa@gmail.com</td>
+                        <td>Staff</td>
+                        <td><span class="active">Active</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="deactivate">Deactivate</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+ 
+    <a href="#" class="helplink">Help</a>
+
+
+    <div class="footer">
+        <p>Manage Users | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

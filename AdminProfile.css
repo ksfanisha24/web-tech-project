@@ -1,0 +1,272 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff3f5;
+    margin: 0;
+    color: #2b3028;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: static;
+    background-color: #e98da3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    color: white;
+    font-size: 16px;
+}
+
+.topnav {
+    position: sticky;
+    top: 0;
+    background-color: #5f8b55;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.topnav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #e47e97;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.pageheading {
+    position: relative;
+    background-color: #fffdfb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(53, 72, 53, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #5f8b55;
+}
+
+h3 {
+    color: #34513d;
+}
+
+.pageheading p {
+    color: #5a6258;
+    font-size: 15px;
+}
+
+.profilesection {
+    background-color: #fffdfb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(53, 72, 53, 0.1);
+}
+
+.profilecard {
+    border: 1px solid #ead3d9;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fffdfb;
+}
+
+.profileheader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ead3d9;
+}
+
+.profileavatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #e47e97;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profiletitle h2 {
+    margin: 0 0 8px;
+    color: #34513d;
+}
+
+.profiletitle p {
+    margin: 0;
+    color: #5a6258;
+    font-size: 14px;
+}
+
+.profileinfo {
+    margin-top: 15px;
+}
+
+.inforow {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 5px;
+    border-bottom: 1px solid #e5eedd;
+}
+
+.infolabel {
+    color: #5a6258;
+    font-weight: bold;
+}
+
+.infovalue {
+    color: #34513d;
+    text-align: right;
+}
+
+.status {
+    display: inline-block;
+    background-color: #e3efdc;
+    color: #34513d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.formsection {
+    background-color: #fffdfb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(53, 72, 53, 0.1);
+}
+
+.sectiondescription {
+    color: #5a6258;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.profileform {
+    width: 100%;
+}
+
+.formrow {
+    display: flex;
+    gap: 20px;
+}
+
+.formgroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.formgroup label {
+    margin-bottom: 8px;
+    color: #34513d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formgroup input,
+.formgroup textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9d9c0;
+    border-radius: 5px;
+    background-color: #fffdfb;
+    font-size: 14px;
+}
+
+.formgroup input:focus,
+.formgroup textarea:focus {
+    outline: none;
+    border-color: #e47e97;
+}
+
+.formgroup input {
+    background-color: #edf4e8;
+    color: #5a6258;
+}
+
+.formgroup textarea {
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #e47e97;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+button:hover {
+    background-color: #c95778;
+    opacity: 0.9;
+}
+
+.helplink {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: #e47e97;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.helplink:hover {
+    opacity: 1;
+}
+
+.footer {
+    background-color: #5f8b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.footer p {
+    color: white;
+    font-size: 14px;
+}

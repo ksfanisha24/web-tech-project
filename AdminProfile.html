@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="AdminProfile.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Admin Profile</h1>
+        <p>View and manage your administrator information</p>
+    </div>
+
+    <div class="topnav">
+        <a href="AdminDashboard.html">Dashboard</a>
+        <a href="ManageUsers.html">Manage Users</a>
+        <a href="ManageProducts.html">Manage Products</a>
+        <a href="ManageOrders.html">Manage Orders</a>
+        <a href="AdminProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+        <div class="pageheading">
+            <h2>My Account</h2>
+            <p>View your account information and update your profile details.</p>
+        </div>
+
+        <div class="profilesection">
+
+            <h3>Admin Information</h3>
+
+            <div class="profilecard">
+
+                <div class="profileheader">
+                    <div class="profileavatar">A</div>
+
+                    <div class="profiletitle">
+                        <h2>Anisha</h2>
+                        <p>System Administrator</p>
+                    </div>
+                </div>
+
+                <div class="profileinfo">
+
+                    <div class="inforow">
+                        <span class="infolabel">Admin ID</span>
+                        <span class="infovalue">ADM001</span>
+                    </div>
+
+                    <div class="inforow">
+                        <span class="infolabel">Full Name</span>
+                        <span class="infovalue">Admin User</span>
+                    </div>
+
+                    <div class="inforow">
+                        <span class="infolabel">Email Address</span>
+                        <span class="infovalue">admin@example.com</span>
+                    </div>
+
+                    <div class="inforow">
+                        <span class="infolabel">Role</span>
+                        <span class="infovalue">Administrator</span>
+                    </div>
+
+                    <div class="inforow">
+                        <span class="infolabel">Account Status</span>
+                        <span class="status">Active</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="formsection">
+
+            <h3>Edit Profile</h3>
+            <p class="sectiondescription">
+                Update your personal information using the form below.
+            </p>
+
+            <form action="" method="get" class="profileform">
+
+                <div class="formrow">
+
+                    <div class="formgroup">
+                        <label for="adminid">Admin ID</label>
+                        <input
+                            type="text"
+                            id="adminid"
+                            name="adminid"
+                            value="ADM001"
+                            readonly>
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            value="Anisha"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="formrow">
+
+                    <div class="formgroup">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            value="anisha@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="formgroup">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            value="01234567891"
+                            placeholder="Enter your phone number">
+                    </div>
+
+                </div>
+
+                <div class="formgroup">
+                    <label for="address">Address</label>
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="3"
+                        placeholder="Enter your address"></textarea>
+                </div>
+
+                <button type="submit">Save Changes</button>
+
+            </form>
+
+        </div>
+
+        
+        <div class="formsection">
+
+            <h3>Change Password</h3>
+            <p class="sectiondescription">
+                Enter your current password and choose a new password.
+            </p>
+
+            <form action="" method="get" class="profile-form">
+
+                <div class="formgroup">
+                    <label for="currentpassword">Current Password</label>
+                    <input
+                        type="password"
+                        id="currentpassword"
+                        name="currentpassword"
+                        placeholder="Enter current password"
+                        required>
+                </div>
+
+                <div class="formgroup">
+                    <label for="newpassword">New Password</label>
+                    <input
+                        type="password"
+                        id="newpassword"
+                        name="newpassword"
+                        placeholder="Enter new password"
+                        required>
+                </div>
+
+                <div class="formgroup">
+                    <label for="confirmpassword">Confirm New Password</label>
+                    <input
+                        type="password"
+                        id="confirmpassword"
+                        name="confirmpassword"
+                        placeholder="Confirm new password"
+                        required>
+                </div>
+
+                <button type="submit">Update Password</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <a href="#" class="helplink">Help</a>
+
+    <div class="footer">
+        <p>Admin Profile | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

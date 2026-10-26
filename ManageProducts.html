@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Manage Products</title>
+
+    <link rel="stylesheet" href="ManageProducts.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Manage Products</h1>
+        <p>View and manage all clothing products</p>
+    </div>
+
+    <div class="topnav">
+        <a href="AdminDashboard.html">Dashboard</a>
+        <a href="ManageUsers.html">Manage Users</a>
+        <a href="ManageProducts.html">Manage Products</a>
+        <a href="ManageOrders.html">Manage Orders</a>
+        <a href="AdminProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <div class="pageheading">
+            <h2>Product Directory</h2>
+            <p>Manage clothing items, prices, sizes and stock from one place.</p>
+            <a href="AddProduct.html" class="addbutton">+ Add New Product</a>
+        </div>
+
+        <div class="row">
+
+            <div class="summary products">
+                <h3>Total Products</h3>
+                <p>180</p>
+            </div>
+
+            <div class="summary instock">
+                <h3>In Stock</h3>
+                <p>150</p>
+            </div>
+
+            <div class="summary lowstock">
+                <h3>Low Stock</h3>
+                <p>30</p>
+            </div>
+
+        </div>
+
+        <div class="filtersection">
+
+            <h3>Filter Products</h3>
+
+            <form action="" method="get">
+
+                <label for="category">Select Category:</label>
+
+                <select id="category" name="category">
+                    <option value="all">All Products</option>
+                    <option value="tshirts">T-Shirts</option>
+                    <option value="hoodies">Hoodies</option>
+                    <option value="jeans">Jeans</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="pants">Pants</option>
+                </select>
+
+                <button type="submit">Filter</button>
+
+            </form>
+
+        </div>
+
+
+        <div class="tablesection">
+
+            <h3>All Products</h3>
+
+            <div class="tablecontainer">
+
+                <table>
+
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>P101</td>
+                        <td>Oversized T-Shirt</td>
+                        <td>T-Shirts</td>
+                        <td>M, L, XL</td>
+                        <td>৳650</td>
+                        <td>45</td>
+                        <td><span class="active">In Stock</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P102</td>
+                        <td>Classic Hoodie</td>
+                        <td>Hoodies</td>
+                        <td>M, L, XL</td>
+                        <td>৳1,250</td>
+                        <td>25</td>
+                        <td><span class="active">In Stock</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P103</td>
+                        <td>Wide-Leg Jeans</td>
+                        <td>Jeans</td>
+                        <td>28, 30, 32</td>
+                        <td>৳1,500</td>
+                        <td>8</td>
+                        <td><span class="lowstock1">Low Stock</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P104</td>
+                        <td>Floral Summer Dress</td>
+                        <td>Dresses</td>
+                        <td>S, M, L</td>
+                        <td>৳1,100</td>
+                        <td>32</td>
+                        <td><span class="active">In Stock</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>P105</td>
+                        <td>Cargo Pants</td>
+                        <td>Pants</td>
+                        <td>30, 32, 34</td>
+                        <td>৳1,350</td>
+                        <td>0</td>
+                        <td><span class="inactive">Out of Stock</span></td>
+                        <td>
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="delete">Delete</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="helplink">Help</a>
+
+    <div class="footer">
+        <p>Manage Products | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
