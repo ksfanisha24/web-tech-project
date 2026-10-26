@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manager Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <h1>Manager Registration</h1>
+
+    <p id="para2">
+        Please complete the form to register as a manager.
+    </p>
+
+    <!-- Registration Form -->
+    <h2 class="class1">Manager Registration Form</h2>
+
+    <p id="para3">Please fill in all required fields</p>
+
+    <form action="ManagerDashboard.html" method="get" class="registration-form">
+
+        <table>
+            <!-- Name -->
+            <tr>
+                <td><label for="name">Name</label></td>
+
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td><label for="email">Email</label></td>
+ 
+                <td>
+                    <input type="email" id="email" name="email"  placeholder="Enter your email" required>    
+                </td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td><label for="password">Password</label></td>
+  
+                <td>             
+                    <input type="password" id="password" name="password"  required>   
+                </td>
+            </tr>
+
+            <!-- Age -->
+            <tr>
+                <td><label for="age">Age</label></td>
+
+                <td>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                </td>
+            </tr>
+
+            <!-- Date of Birth -->
+            <tr>
+                <td><label for="dob">DOB</label></td>
+ 
+                <td>
+                    <input type="date" id="dob" name="dob"  required>
+                </td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- Membership Type -->
+            <tr>
+                <td><label for="membership">Membership Type</label></td>
+  
+                <td>
+                    <select id="membership" name="membership" required>
+                        <option value="">Select Type</option>
+                        <option value="regular">Regular</option>
+                        <option value="premium">Premium</option>
+                        <option value="student">Student</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Profile Picture -->
+            <tr>
+                <td><label for="file">Profile Picture</label></td>
+
+                <td>
+                    <input type="file" id="file" name="file" required>     
+                </td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td><label for="address">Address</label></td>
+
+                <td>
+                    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>  
+                </td>
+            </tr>
+
+            <!-- Terms -->
+            <tr>
+                <td>Terms</td>
+                <td>
+                    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                    <label for="terms"> I agree to the terms </label>
+                </td>
+            </tr>
+
+            <!-- Register Button -->
+            <tr>
+                <td><button type="submit">Register</button></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <p class="login-link"> 
+        Already have an account?<a href="ManagerLogin.html">Login here</a>
+    </p>
+
+</body>
+</html>

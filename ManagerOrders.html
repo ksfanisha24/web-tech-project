@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Orders</title>
+    <link rel="stylesheet" href="Orders.css">
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Manage Orders</h1>
+        <p>View and manage customer orders</p>
+    </div>
+
+    <div class="topnav">
+        <a href="ManagerDashboard.html">Dashboard</a>
+        <a href="ManagerProduct.html">Products</a>
+        <a href="ManagerOrders.html">Orders</a>
+        <a href="ManagerInventory.html">Inventory</a>
+        <a href="ManagerSalesReport.html">Sales Report</a>
+        <a href="ManagerProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <div class="heading">
+            <h2>Order Management</h2>
+            <p>View customer orders and track their status
+            from one place.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="summary total">
+                <h3>Total Orders</h3>
+                <p>96</p>
+            </div>
+
+            <div class="summary pending">
+                <h3>Pending Orders</h3>
+                <p>18</p>
+            </div>
+
+            <div class="summary delivered">
+                <h3>Delivered Orders</h3>
+                <p>78</p>
+            </div>
+
+        </div>
+
+        <div class="filter">
+            <h3>Filter Orders</h3>
+
+            <form action="" method="get">
+                <label for="status">Order Status:</label>
+
+                <select id="status" name="status">
+                    <option value="all">All Orders</option>
+                    <option value="pending">Pending</option>
+                    <option value="processing">Processing</option>
+                    <option value="delivered">Delivered</option>
+                </select>
+
+                <button type="submit">Filter</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+
+            <h3>All Customer Orders</h3>
+
+            <div class="table-container">
+                <table>
+
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>O101</td>
+                        <td>Rahim Ahmed</td>
+                        <td>Oversized T-Shirt</td>
+                        <td>2</td>
+                        <td>1,300/-</td>
+                        <td>12-10-2026</td>
+                        <td>
+                            <span class="pendingstatus">
+                                Pending
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#" class="edit">Update</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>O102</td>
+                        <td>Nusrat Jahan</td>
+                        <td>Classic Hoodie</td>
+                        <td>1</td>
+                        <td>1,250/-</td>
+                        <td>13-10-2026</td>
+                        <td>
+                            <span class="processingstatus">
+                                Processing
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#" class="edit">Update</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>O103</td>
+                        <td>Tanvir Hasan</td>
+                        <td>Wide-Leg Jeans</td>
+                        <td>1</td>
+                        <td>1,500/-</td>
+                        <td>14-10-2026</td>
+                        <td>
+                            <span class="deliveredstatus">
+                                Delivered
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#" class="edit">Update</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>O104</td>
+                        <td>Sadia Islam</td>
+                        <td>Floral Summer Dress</td>
+                        <td>2</td>
+                        <td>2,200/-</td>
+                        <td>15-10-2026</td>
+                        <td>
+                            <span class="pendingstatus">
+                                Pending
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#" class="edit">Update</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>O105</td>
+                        <td>Mehedi Hasan</td>
+                        <td>Cargo Pants</td>
+                        <td>1</td>
+                        <td>1,350/-</td>
+                        <td>16-10-2026</td>
+                        <td>
+                            <span class="deliveredstatus">
+                                Delivered
+                            </span>
+                        </td>
+                        <td>
+                            <a href="#" class="edit">Update</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+        <a href="#" class="help">Help</a>
+
+    <div class="footer">
+        <p>Manager Orders | All Rights Reserved</p>
+    </div>
+</body>
+</html>
