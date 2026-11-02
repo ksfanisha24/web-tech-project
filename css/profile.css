@@ -4,15 +4,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #fff3f5;
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #2b3028;
 }
 
 .header {
-    background-color: #2c3e50;
+    background-color: #e98da3;
     color: white;
     padding: 24px 20px;
     text-align: center;
@@ -21,40 +22,43 @@ body {
 .header h1 {
     font-size: 26px;
     margin: 0 0 6px 0;
+    color: white;
 }
 
 .header h2 {
     font-size: 16px;
     font-weight: normal;
     margin: 0 0 4px 0;
-    color: #bdc3c7;
+    color: #fffdfb;
 }
 
 .header p {
     margin: 2px 0;
     font-size: 13px;
-    color: #95a5a6;
+    color: #fffdfb;
+    opacity: 0.85;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #34495e;
+    background-color: #5f8b55;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .navbar a {
-    color: white;
+    color: #e3efdc;
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
     font-size: 14px;
 }
 
-.navbar a:hover {
-    background-color: #e74c3c;
+.navbar a:hover,
+.navbar a.active {
+    background-color: #e47e97;
     color: white;
 }
 
@@ -66,15 +70,16 @@ body {
 }
 
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #fffdfb;
+    border: 1px solid #ead3d9;
+    border-top: 3px solid #e47e97;
     padding: 24px;
     max-width: 580px;
     margin: 0 auto;
 }
 
 .card h2 {
-    color: #2c3e50;
+    color: #34513d;
     margin-top: 0;
     font-size: 20px;
 }
@@ -83,7 +88,7 @@ form label {
     display: block;
     font-weight: bold;
     font-size: 13px;
-    color: #2c3e50;
+    color: #34513d;
     margin-top: 10px;
 }
 
@@ -92,20 +97,31 @@ form textarea {
     display: block;
     width: 100%;
     padding: 8px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #c9d9c0;
+    background-color: #edf4e8;
+    color: #2b3028;
     font-size: 14px;
     margin-top: 4px;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #e47e97;
+    background-color: #fffdfb;
 }
 
 form input[readonly] {
-    background-color: #f5f5f5;
-    color: #7f8c8d;
+    background-color: #e3efdc;
+    color: #5a6258;
 }
 
 .form-buttons {
     display: flex;
     margin-top: 16px;
+    gap: 10px;
 }
 
 input[type="submit"],
@@ -114,30 +130,30 @@ input[type="reset"] {
     padding: 9px 18px;
     border: none;
     font-size: 14px;
-    margin-right: 10px;
 }
 
 input[type="submit"] {
-    background-color: #e74c3c;
+    background-color: #e47e97;
     color: white;
 }
 
 input[type="submit"]:hover {
-    background-color: #c0392b;
+    background-color: #c95778;
 }
 
 input[type="reset"] {
-    background-color: #7f8c8d;
-    color: white;
+    background-color: #ead3d9;
+    color: #34513d;
 }
 
 input[type="reset"]:hover {
-    background-color: #636e72;
+    background-color: #c95778;
+    color: white;
 }
 
 .footer {
-    background-color: #2c3e50;
-    color: #bdc3c7;
+    background-color: #5f8b55;
+    color: #e3efdc;
     padding: 20px;
     text-align: center;
     margin-top: auto;

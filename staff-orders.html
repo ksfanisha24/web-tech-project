@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders - Clothing Brand Management System</title>
+    <link rel="stylesheet" href="css/staff-orders.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <h2>Order &amp; Delivery Management</h2>
+        <p>Staff ID: 24-59974-3</p>
+    </div>
+    <nav class="navbar">
+        <a href="staff-dashboard.html">Dashboard</a>
+        <a href="staff-orders.html" class="active">Manage Orders</a>
+        <a href="delivery.html">Delivery Info</a>
+        <a href="notes.html">Processing Notes</a>
+        <a href="completed.html">Completed Orders</a>
+        <a href="staff-profile.html">My Profile</a>
+        <a href="staff-login.html" class="nav-logout">Logout</a>
+    </nav>
+    <div class="content">
+        <div class="summary-row">
+            <div class="summary-card">
+                <div class="sc-value">7</div>
+                <div class="sc-label">Total Orders</div>
+            </div>
+            <div class="summary-card sc-pending">
+                <div class="sc-value">2</div>
+                <div class="sc-label">Pending</div>
+            </div>
+            <div class="summary-card sc-processing">
+                <div class="sc-value">2</div>
+                <div class="sc-label">Processing</div>
+            </div>
+            <div class="summary-card sc-shipped">
+                <div class="sc-value">1</div>
+                <div class="sc-label">Shipped</div>
+            </div>
+            <div class="summary-card sc-delivered">
+                <div class="sc-value">1</div>
+                <div class="sc-label">Delivered</div>
+            </div>
+            <div class="summary-card sc-cancelled">
+                <div class="sc-value">1</div>
+                <div class="sc-label">Cancelled</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-head">
+                <h2>Customer Orders</h2>
+                <div class="filter-bar">
+                    <span class="filter-label">Filter by Status:</span>
+                    <div class="filter-btns">
+                        <a href="staff-orders.html" class="filter-btn active">All</a>
+                        <a href="#" class="filter-btn pending">Pending</a>
+                        <a href="#" class="filter-btn processing">Processing</a>
+                        <a href="#" class="filter-btn shipped">Shipped</a>
+                        <a href="#" class="filter-btn delivered">Delivered</a>
+                        <a href="#" class="filter-btn cancelled">Cancelled</a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Order Date</th>
+                            <th>Items</th>
+                            <th>Total Amount</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>Update Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>ORD001</strong></td>
+                            <td>Rahim Ahmed</td>
+                            <td>15-10-2026</td>
+                            <td>Casual Shirt (x2)</td>
+                            <td>BDT 1,800</td>
+                            <td><span class="pay-badge paid">Paid</span></td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option selected>Pending</option>
+                                    <option>Processing</option>
+                                    <option>Shipped</option>
+                                    <option>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="alt">
+                            <td><strong>ORD002</strong></td>
+                            <td>Karim Hasan</td>
+                            <td>16-10-2026</td>
+                            <td>Denim Jacket (x1)</td>
+                            <td>BDT 3,200</td>
+                            <td><span class="pay-badge paid">Paid</span></td>
+                            <td><span class="status-badge processing">Processing</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option selected>Processing</option>
+                                    <option>Shipped</option>
+                                    <option>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>ORD003</strong></td>
+                            <td>Nusrat Jahan</td>
+                            <td>17-10-2026</td>
+                            <td>Summer Dress (x1)</td>
+                            <td>BDT 2,500</td>
+                            <td><span class="pay-badge paid">Paid</span></td>
+                            <td><span class="status-badge shipped">Shipped</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option>Processing</option>
+                                    <option selected>Shipped</option>
+                                    <option>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="alt">
+                            <td><strong>ORD004</strong></td>
+                            <td>Sumaiya Akter</td>
+                            <td>18-10-2026</td>
+                            <td>Casual Shirt (x2), Pants (x1)</td>
+                            <td>BDT 4,100</td>
+                            <td><span class="pay-badge paid">Paid</span></td>
+                            <td><span class="status-badge delivered">Delivered</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option>Processing</option>
+                                    <option>Shipped</option>
+                                    <option selected>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>ORD005</strong></td>
+                            <td>Tariq Rahman</td>
+                            <td>20-10-2026</td>
+                            <td>Winter Coat (x1)</td>
+                            <td>BDT 5,600</td>
+                            <td><span class="pay-badge unpaid">Unpaid</span></td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option selected>Pending</option>
+                                    <option>Processing</option>
+                                    <option>Shipped</option>
+                                    <option>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="alt">
+                            <td><strong>ORD006</strong></td>
+                            <td>Fatema Begum</td>
+                            <td>21-10-2026</td>
+                            <td>Linen Shirt (x3)</td>
+                            <td>BDT 2,700</td>
+                            <td><span class="pay-badge paid">Paid</span></td>
+                            <td><span class="status-badge processing">Processing</span></td>
+                            <td>
+                                <select class="status-select">
+                                    <option>Pending</option>
+                                    <option selected>Processing</option>
+                                    <option>Shipped</option>
+                                    <option>Delivered</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>ORD007</strong></td>
+                            <td>Imran Hossain</td>
+                            <td>22-10-2026</td>
+                            <td>Polo T-Shirt (x2)</td>
+                            <td>BDT 1,600</td>
+                            <td><span class="pay-badge refunded">Refunded</span></td>
+                            <td><span class="status-badge cancelled">Cancelled</span></td>
+                            <td>
+                                <select class="status-select" disabled>
+                                    <option selected>Cancelled</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card note-panel">
+            <div class="card-head">
+                <h2>Add Processing Note / Update Delivery Details</h2>
+            </div>
+            <form id="noteForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="noteOrderId">Order ID</label>
+                        <input type="text" id="noteOrderId" placeholder="e.g. ORD001">
+                        <span class="error-msg" id="noteOrderIdError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="noteCustomer">Customer Name</label>
+                        <input type="text" id="noteCustomer" placeholder="e.g. Rahim Ahmed">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="noteDeliveryAddress">Delivery Address</label>
+                        <input type="text" id="noteDeliveryAddress" placeholder="Enter or update delivery address">
+                    </div>
+                    <div class="form-group">
+                        <label for="noteExpectedDate">Expected Delivery Date</label>
+                        <input type="date" id="noteExpectedDate">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="noteText">Processing Note</label>
+                    <textarea id="noteText" rows="4" placeholder="Enter processing details, instructions, or delivery notes..."></textarea>
+                    <span class="error-msg" id="noteTextError"></span>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Save Note</button>
+                    <button type="reset" class="btn-secondary">Clear</button>
+                </div>
+            </form>
+            <div class="notes-history">
+                <h4>Processing Notes History</h4>
+                <table class="notes-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Delivery Address</th>
+                            <th>Expected Date</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ORD001</td>
+                            <td>Rahim Ahmed</td>
+                            <td>Mirpur, Dhaka</td>
+                            <td>25-10-2026</td>
+                            <td>Order is waiting for packaging.</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>ORD002</td>
+                            <td>Karim Hasan</td>
+                            <td>Uttara, Dhaka</td>
+                            <td>26-10-2026</td>
+                            <td>Product packed and ready for dispatch.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Clothing Brand Management System</p>
+        <p>Web Technologies | Staff Module</p>
+    </div>
+</body>
+</html>

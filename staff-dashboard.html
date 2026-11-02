@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard - Clothing Brand Management System</title>
+    <link rel="stylesheet" href="css/staff-dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <h2>Staff Dashboard</h2>
+        <p>A. K. M Habibul Islam Rafin</p>
+        <p>Staff ID: 24-59974-3</p>
+    </div>
+    <nav class="navbar">
+        <a href="staff-dashboard.html" class="active">Dashboard</a>
+        <a href="staff-orders.html">Manage Orders</a>
+        <a href="delivery.html">Delivery Info</a>
+        <a href="notes.html">Processing Notes</a>
+        <a href="completed.html">Completed Orders</a>
+        <a href="staff-profile.html">My Profile</a>
+        <a href="staff-login.html" class="nav-logout">Logout</a>
+    </nav>
+    <div class="content">
+        <div class="welcome-box">
+            <div class="welcome-text">
+                <h2>Welcome back, Habibul!</h2>
+                <p>This is your staff control centre. Manage customer orders, track deliveries, and add processing notes all in one place. Your work keeps the store running smoothly.</p>
+                <div class="welcome-actions">
+                    <a href="staff-orders.html" class="btn-action">Manage Orders</a>
+                    <a href="delivery.html" class="btn-action-outline">Delivery Info</a>
+                </div>
+            </div>
+            <div class="welcome-img">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=280&fit=crop" alt="Clothing Store">
+            </div>
+        </div>
+        <div class="metrics-row">
+            <div class="metric-card" style="border-top-color: #e47e97;">
+                <div class="metric-value">12</div>
+                <div class="metric-label">Total Orders Assigned</div>
+            </div>
+            <div class="metric-card" style="border-top-color: #f9a825;">
+                <div class="metric-value">4</div>
+                <div class="metric-label">Pending Orders</div>
+            </div>
+            <div class="metric-card" style="border-top-color: #5f8b55;">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Out for Delivery</div>
+            </div>
+            <div class="metric-card" style="border-top-color: #34513d;">
+                <div class="metric-value">5</div>
+                <div class="metric-label">Completed Deliveries</div>
+            </div>
+        </div>
+        <div class="main-row">
+            <div class="panel">
+                <h3>Order Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Orders</td>
+                            <td><strong>12</strong></td>
+                        </tr>
+                        <tr class="alt">
+                            <td>Pending</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Processing</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>Shipped</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Delivered</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel panel-mid">
+                <h3>Staff Responsibilities</h3>
+                <ul class="resp-list">
+                    <li>View and manage all assigned customer orders.</li>
+                    <li>Update order status from Pending to Processing to Delivered.</li>
+                    <li>Add detailed processing notes for each order.</li>
+                    <li>Maintain and update delivery information records.</li>
+                    <li>Monitor completed orders and delivery confirmations.</li>
+                    <li>Keep the customer profile details up to date.</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h3>Quick Links</h3>
+                <div class="quick-links">
+                    <a href="staff-orders.html">Manage Orders</a>
+                    <a href="notes.html">Add Processing Note</a>
+                    <a href="delivery.html">Delivery Info</a>
+                    <a href="completed.html">Completed Orders</a>
+                    <a href="staff-profile.html">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Clothing Brand Management System</p>
+        <p>Web Technologies | Staff Module</p>
+    </div>
+</body>
+</html>

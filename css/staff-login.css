@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3f5;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #e98da3;
+    color: white;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin: 0 0 6px 0;
+    color: white;
+}
+
+.header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 4px 0;
+    color: #fffdfb;
+}
+
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.login-card {
+    background-color: #fffdfb;
+    border: 1px solid #ead3d9;
+    padding: 36px 40px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card h2 {
+    color: #34513d;
+    font-size: 20px;
+    margin: 0 0 6px 0;
+}
+
+.card-subtitle {
+    font-size: 13px;
+    color: #5a6258;
+    margin: 0 0 22px 0;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: #34513d;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #c9d9c0;
+    background-color: #edf4e8;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #2b3028;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e47e97;
+    background-color: #fffdfb;
+}
+
+.error-msg {
+    display: block;
+    font-size: 12px;
+    color: #c95778;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.error-banner {
+    background-color: #fce1e7;
+    color: #c95778;
+    border: 1px solid #ead3d9;
+    padding: 9px 12px;
+    font-size: 13px;
+    margin-bottom: 14px;
+    display: none;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e47e97;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+.btn-login:hover {
+    background-color: #c95778;
+    color: white;
+}
+
+.register-link {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #5a6258;
+}
+
+.register-link a {
+    color: #e47e97;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #c95778;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #5f8b55;
+    color: #e3efdc;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 4px 0;
+    font-size: 13px;
+}

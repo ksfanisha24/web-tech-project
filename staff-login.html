@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login - Clothing Brand Management System</title>
+    <link rel="stylesheet" href="css/staff-login.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <h2>Staff Portal</h2>
+    </div>
+    <div class="page-wrapper">
+        <div class="login-card">
+            <h2>Staff Sign In</h2>
+            <p class="card-subtitle">Enter your credentials to access the staff dashboard.</p>
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <span class="error-msg" id="passwordError"></span>
+                </div>
+                <div id="formErrorMsg" class="error-banner"></div>
+                <a href="staff-dashboard.html" class="btn-login">Sign In to Dashboard</a>
+                <p class="register-link">Don't have an account? <a href="staff-register.html">Register Here</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Clothing Brand Management System</p>
+        <p>Web Technologies | Staff Module</p>
+    </div>
+</body>
+</html>
