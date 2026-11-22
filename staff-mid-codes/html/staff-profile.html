@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Staff Profile</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/staff-profile.css">
+    <script src="../js/staff-profile.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Staff Profile</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff-dashboard.html">Dashboard</a>
+        <a href="staff-orders.html">Orders</a>
+        <a href="notes.html">Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed</a>
+        <a href="staff-profile.html" class="active">Profile</a>
+        <a href="staff.html">Logout</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Personal Information</h2>
+        <p class="description">View and update your staff profile details.</p>
+
+        <form onsubmit="return updateStaffProfile()" class="profileform">
+            <table>
+                <tr>
+                    <td><label for="profStaffId">Staff ID</label></td>
+                    <td><input type="text" id="profStaffId" value="STF-2026-04" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="profFullName">Full Name</label></td>
+                    <td><input type="text" id="profFullName" value="Staff Member" required></td>
+                </tr>
+                <tr>
+                    <td><label for="profEmail">Email</label></td>
+                    <td><input type="email" id="profEmail" value="staff1@clothingbrand.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="profPhone">Phone</label></td>
+                    <td><input type="text" id="profPhone" value="01755512345" required></td>
+                </tr>
+                <tr>
+                    <td><label for="profShift">Work Shift</label></td>
+                    <td>
+                        <select id="profShift">
+                            <option value="Morning" selected>Morning</option>
+                            <option value="Evening">Evening</option>
+                            <option value="Night">Night</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="profAddress">Address</label></td>
+                    <td><textarea id="profAddress" rows="2">Kuratoli, Kuril, Dhaka-1229</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Update Profile</button></td>
+                </tr>
+            </table>
+            <p id="profileMessage"></p>
+        </form>
+
+        <h2>Change Password</h2>
+
+        <form onsubmit="return updateStaffPassword()" class="profileform">
+            <table>
+                <tr>
+                    <td><label for="oldPass">Current Password</label></td>
+                    <td><input type="password" id="oldPass" required></td>
+                </tr>
+                <tr>
+                    <td><label for="newPass">New Password</label></td>
+                    <td><input type="password" id="newPass" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confNewPass">Confirm Password</label></td>
+                    <td><input type="password" id="confNewPass" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Change Password</button></td>
+                </tr>
+            </table>
+            <p id="passwordMessage"></p>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>

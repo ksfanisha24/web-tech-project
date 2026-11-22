@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Staff Login</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/staff.css">
+    <script src="../js/staff-login.js" defer></script> 
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Staff Portal</p>
+    </div>
+
+    <div class="main">
+        <h2>Staff Login</h2>
+        <p class="description">Welcome back! Please login to your account.</p>
+
+        <form action="staff-dashboard.html" method="post" class="loginform" onsubmit="return validateStaffLogin()">
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" id="username" placeholder="Enter username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" placeholder="Enter password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+            </table>
+            <p id="message"></p>
+        </form>
+
+        <p class="bottomlink">
+            Don't have an account? <a href="staff-register.html">Register as New Staff</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff3f5;
+    color: #2b3028;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, h2, .description, #message, .bottomlink, .footer {
+    text-align: center;
+}
+
+.main, table, input, select, button {
+    width: 100%;
+}
+
+.header {
+    background: #e98da3;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin: 6px 0 0;
+    font-size: 15px;
+}
+
+.main {
+    max-width: 550px;
+    margin: 30px auto 40px;
+    padding: 20px;
+    flex: 1;
+}
+
+h2 {
+    color: #34513d;
+    margin-bottom: 8px;
+}
+
+.description {
+    margin: 0 0 20px;
+}
+
+.regform, input, select {
+    background: #fffdfb;
+    border: 1px solid #ead3d9;
+}
+
+.regform {
+    padding: 25px;
+    border-radius: 4px;
+}
+
+td, input, select {
+    padding: 8px;
+}
+
+input, select {
+    border-radius: 3px;
+}
+
+#terms {
+    width: auto;
+    margin-right: 6px;
+}
+
+button {
+    padding: 10px;
+    background: #e47e97;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover{
+    background: #c95778;
+}
+
+button:disabled {
+    background: #ead3d9;
+    color: #888;
+}
+
+#message {
+    color: #c95778;
+    margin: 10px 0 0;
+}
+
+.bottomlink {
+    margin-top: 20px;
+}
+
+.bottomlink a {
+    color: #5f8b55;
+    text-decoration: none;
+}
+
+.bottomlink a:hover {
+    color: #34513d;
+}
+
+.footer {
+    background: #2b3028;
+    color: white;
+    padding: 14px;
+    font-size: 12px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Orders</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/staff-orders.css">
+    <script src="../js/staff-orders.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Customer Orders</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff-dashboard.html">Dashboard</a>
+        <a href="staff-orders.html" class="active">Orders</a>
+        <a href="notes.html">Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed</a>
+        <a href="staff-profile.html">Profile</a>
+        <a href="staff.html">Logout</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Customer Orders List</h2>
+        <p class="description">Review customer purchases and update order progress.</p>
+
+        <p id="message"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ORD-101</td>
+                    <td>Sadia Farzana</td>
+                    <td>Embroidered Silk Kurti (M)</td>
+                    <td>$45.00</td>
+                    <td><span id="badge1" class="pending">Pending</span></td>
+                    <td>
+                        <select id="sel1">
+                            <option value="Pending">Pending</option>
+                            <option value="Processing">Processing</option>
+                            <option value="Delivered">Delivered</option>
+                        </select>
+                        <button type="button" onclick="updateOrderStatus('sel1', 'badge1', 'ORD-101')">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ORD-102</td>
+                    <td>Asmaul Husna</td>
+                    <td>Denim Jacket (L)</td>
+                    <td>$65.00</td>
+                    <td><span id="badge2" class="processing">Processing</span></td>
+                    <td>
+                        <select id="sel2">
+                            <option value="Pending">Pending</option>
+                            <option value="Processing" selected>Processing</option>
+                            <option value="Delivered">Delivered</option>
+                        </select>
+                        <button type="button" onclick="updateOrderStatus('sel2', 'badge2', 'ORD-102')">Update</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ORD-103</td>
+                    <td>Jabonnasa Mim</td>
+                    <td>Floral Summer Dress (S)</td>
+                    <td>$38.00</td>
+                    <td><span id="badge3" class="pending">Pending</span></td>
+                    <td>
+                        <select id="sel3">
+                            <option value="Pending">Pending</option>
+                            <option value="Processing">Processing</option>
+                            <option value="Delivered">Delivered</option>
+                        </select>
+                        <button type="button" onclick="updateOrderStatus('sel3', 'badge3', 'ORD-103')">Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>
