@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Staff Registration</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/staff-register.css">
+    <script src="../js/staff-register.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Staff Registration</p>
+    </div>
+
+    <div class="main">
+        <h2>Register New Staff</h2>
+        <p class="description">Please fill in all fields to create your staff account.</p>
+
+        <form action="staff.html" method="post" class="regform" onsubmit="return validateStaffRegister()">
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name</label></td>
+                    <td><input type="text" id="fullname" placeholder="Enter full name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" placeholder="staff@clothingbrand.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" placeholder="Enter password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmpass">Confirm Password</label></td>
+                    <td><input type="password" id="confirmpass" placeholder="Confirm password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="shift">Shift</label></td>
+                    <td>
+                        <select id="shift">
+                            <option value="Morning">Morning</option>
+                            <option value="Evening">Evening</option>
+                            <option value="Night">Night</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terms</td>
+                    <td>
+                        <input type="checkbox" id="terms" onchange="toggleSubmit()">
+                        <label for="terms">I agree to the terms</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" id="submitBtn" disabled>Register</button></td>
+                </tr>
+            </table>
+            <p id="message"></p>
+        </form>
+
+        <p class="bottomlink">
+            Already registered? <a href="staff.html">Login here</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>

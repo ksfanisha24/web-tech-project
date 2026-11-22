@@ -1,28 +1,49 @@
 # Clothing Brand Management System
 
-# Customer Module
+Web Technologies course group project for a complete Clothing Brand Management System.
 
-Welcome to the Customer Module of our Clothing Brand Management System.
+This web application provides dedicated portals for all four roles involved in running a modern clothing brand: **Admin**, **Manager**, **Customer**, and **Staff**.
 
-This portal is designed for customers to explore clothing products and manage their shopping activities easily. It helps customers create accounts, browse clothing collections, search for products, manage their shopping cart, complete checkout, and update their personal information.
+---
 
-## What Customers Can Do
+## Project Structure & Modules
 
-1. **Customer Registration and Login:** New customers can create an account, enter their information, and log in using their credentials.
-2. **Customer Home Page:** Explore featured clothing products, browse collections, and search for specific items.
-3. **Product Browsing:** View available clothing products and explore different categories.
-4. **Product Details:** Check individual product information, including descriptions, prices, and other available details.
-5. **Shopping Cart:** Add products to the cart, manage selected items, and review the total price.
-6. **Checkout:** Review order information and complete the checkout form.
-7. **Customer Profile:** View and edit personal information, including name, email, phone number, and address.
+### 1. Admin Module (Member 1)
+Located in `admin-mid-codes/`
+* **Admin Login & Dashboard:** Secure entry point and system overview.
+* **Manage Users:** View, search, update, and manage system accounts.
+* **Manage Products:** Catalog management for clothing items and apparel.
+* **Admin Profile:** Admin account details and credential management.
+
+### 2. Manager Module (Member 2)
+Located in `html/`, `css/`, `js/`, `images/`
+* **Manager Registration & Login:** Dedicated authentication for store managers.
+* **Manager Dashboard:** Overview of store inventory, activities, and quick access cards.
+* **Inventory Management:** Stock tracking, updates, and product replenishment logs.
+* **Sales Report:** Summary and tracking of store sales performance.
+* **Manager Profile:** Personal information and security settings.
+
+### 3. Customer Module (Member 3)
+Located in `Customer-mid-codes/`
+* **Customer Registration & Login:** Account creation and login for online shoppers.
+* **Product Catalog & Details:** Browse categories, explore products, and view descriptions.
+* **Shopping Cart & Checkout:** Add items, manage cart quantities, and submit delivery details.
+* **Customer Profile:** Manage address, contact details, and account preferences.
+
+### 4. Staff Module (Member 4)
+Located in `staff-mid-codes/`
+* **Staff Registration & Login:** Account creation and authentication for store staff.
+* **Staff Dashboard:** Daily workload metrics, quick order numbers, and navigation.
+* **Order Management:** Review customer purchases and update order status (Pending, Processing, Delivered).
+* **Order Notes:** Record special handling instructions and packaging notes.
+* **Delivery Management:** Assign courier partners, set dispatch addresses, and track shipments.
+* **Completed Orders:** Archive and search successfully fulfilled orders.
+* **Staff Profile:** View and update staff profile information and passwords.
+
+---
 
 ## Technology Used
 
-This project is built using basic web technologies:
-
-- **HTML** for creating the structure of customer pages.
-- **CSS** for styling, page layouts, and visual design.
-- **JavaScript** for form validation, product searching, profile editing, and interactive page functionality.
-
-All files for this module, including HTML, CSS, JavaScript, and required images, are organized inside the Customer mid codes directory.
-
+* **HTML5:** Semantic and accessible page structure across all four portals.
+* **CSS3:** Custom responsive layouts, consistent color palettes, and clean user interfaces.
+* **JavaScript:** Client-side form validation, search filters, interactive UI controls, and dynamic state updates.

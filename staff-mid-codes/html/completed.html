@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Completed Orders</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/completed.css">
+    <script src="../js/completed.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Completed Orders</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff-dashboard.html">Dashboard</a>
+        <a href="staff-orders.html">Orders</a>
+        <a href="notes.html">Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html" class="active">Completed</a>
+        <a href="staff-profile.html">Profile</a>
+        <a href="staff.html">Logout</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Archived Completed Orders</h2>
+        <p class="description">All successfully delivered customer orders and transaction records.</p>
+
+        <div class="searchbox">
+            <input type="text" id="searchBox" placeholder="Search by customer, order ID or item..." onkeyup="searchCompleted()">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="completedTableBody">
+                <tr>
+                    <td>ORD-095</td>
+                    <td>Farhana Yasmin</td>
+                    <td>Embroidered Lawn Kameez (M)</td>
+                    <td>$52.00</td>
+                    <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                    <td>ORD-096</td>
+                    <td>Rezaul Karim</td>
+                    <td>Slim Fit Chino Pants 32</td>
+                    <td>$40.00</td>
+                    <td><span class="delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                    <td>ORD-097</td>
+                    <td>Nusrat Jahan</td>
+                    <td>Cotton Silk Scarf x 2</td>
+                    <td>$22.00</td>
+                    <td><span class="delivered">Delivered</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Staff Dashboard</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/staff-dashboard.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Staff Dashboard</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff-dashboard.html" class="active">Dashboard</a>
+        <a href="staff-orders.html">Orders</a>
+        <a href="notes.html">Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed</a>
+        <a href="staff-profile.html">Profile</a>
+        <a href="staff.html">Logout</a>
+    </div>
+
+    <div class="main">
+
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Staff Activity Overview</h2>
+                <p>Welcome back! You have active orders requiring processing, delivery assignments, and order notes to inspect.</p>
+            </div>
+            <div class="picbox">
+                <img src="../images/pp2.png" alt="Sewing Machine Icon">
+            </div>
+        </div>
+
+        <h2>Orders Summary</h2>
+
+        <div class="row">
+            <div class="card" id="pendingCard">
+                <h3>Pending Orders</h3>
+                <p class="count">3</p>
+                <a href="staff-orders.html">View Orders</a>
+            </div>
+
+            <div class="card" id="processingCard">
+                <h3>Processing Orders</h3>
+                <p class="count">4</p>
+                <a href="staff-orders.html">View Orders</a>
+            </div>
+
+            <div class="card" id="deliveredCard">
+                <h3>Delivered Orders</h3>
+                <p class="count">8</p>
+                <a href="completed.html">View Orders</a>
+            </div>
+        </div>
+
+        <h2>Brand Inventory & Logistics</h2>
+
+        <div class="row">
+            <div class="gallery">
+                <a href="staff-orders.html">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop" alt="Store Orders">
+                    <h3>Store Orders</h3>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="delivery.html">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop" alt="Delivery Hub">
+                    <h3>Delivery Hub</h3>
+                </a>
+            </div>
+
+            <div class="gallery">
+                <a href="completed.html">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&h=300&fit=crop" alt="Fulfilled Orders">
+                    <h3>Fulfilled Orders</h3>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>
