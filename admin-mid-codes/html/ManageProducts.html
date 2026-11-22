@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Manage Products</title>
+
+<link rel="stylesheet" href="../css/ManageProducts.css">
+<link rel="icon" href="../images/favicon.png">
+<script src="../js/ManageProducts.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Matcha Berry Boutique</h1>
+        <p>View and manage all clothing products</p>
+    </div>
+
+    <div class="topnav">
+        <a href="AdminDashboard.html">Dashboard</a>
+        <a href="ManageUsers.html">Manage Users</a>
+        <a href="ManageProducts.html">Manage Products</a>
+        <a href="AdminProfile.html">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <div class="pageheading">
+            <h2>Product Directory</h2>
+            <p>Manage clothing items, prices, sizes and stock from one place.</p>
+            <a href="#" class="addbutton" onclick="return showForm()">+ Add New Product</a>
+        </div>
+
+        <div class="row">
+
+            <div class="summary products">
+                <h3>Total Products</h3>
+                <p id="totalCount">0</p>
+            </div>
+
+            <div class="summary instock">
+                <h3>In Stock</h3>
+                <p id="inStockCount">0</p>
+            </div>
+
+            <div class="summary lowstock">
+                <h3>Low Stock</h3>
+                <p id="lowStockCount">0</p>
+            </div>
+
+        </div>
+
+        <div class="filtersection" id="productForm" style="display: none;">
+
+            <h3>Add / Edit Product</h3>
+
+            <label for="newId">Product ID:</label>
+            <input type="text" id="newId" placeholder="Enter product ID (e.g. 1006)">
+            <br>
+
+            <label for="newName">Product Name:</label>
+            <input type="text" id="newName" placeholder="Enter product name">
+            <br>
+
+            <label for="newCategory">Category:</label>
+            <select id="newCategory">
+                <option value="T-Shirts">T-Shirts</option>
+                <option value="Hoodies">Hoodies</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Dresses">Dresses</option>
+                <option value="Pants">Pants</option>
+            </select>
+            <br>
+
+            <label for="newSize">Size:</label>
+            <select id="newSize">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <br>
+
+            <label for="newPrice">Price:</label>
+            <input type="text" id="newPrice" placeholder="Enter price">
+            <br>
+
+            <label for="newStock">Stock:</label>
+            <input type="text" id="newStock" placeholder="Enter stock">
+            <br>
+
+            <button type="button" id="addBtn" onclick="saveProduct()">Add Product</button>
+
+            <p id="formMessage"></p>
+
+        </div>
+
+        <div class="filtersection">
+
+            <h3>Filter Products</h3>
+
+            <form action="" method="post" onsubmit="return filterProducts()">
+
+                <label for="category">Select Category:</label>
+
+                <select id="category" name="category">
+                    <option value="all">All Products</option>
+                    <option value="tshirts">T-Shirts</option>
+                    <option value="hoodies">Hoodies</option>
+                    <option value="jeans">Jeans</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="pants">Pants</option>
+                </select>
+
+                <button type="submit">Filter</button>
+
+            </form>
+
+        </div>
+
+
+        <div class="tablesection">
+
+            <h3>All Products</h3>
+
+            <div class="tablecontainer">
+
+                <table>
+
+                    <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="productBody"></tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#" class="helplink">Help</a>
+
+    <div class="footer">
+        <p>Manage Products | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
