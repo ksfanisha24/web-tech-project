@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fff3f5;
+    color: #2b3028;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #e98da3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: #5f8b55;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 14px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #e47e97;
+}
+
+.main {
+    max-width: 960px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    flex: 1;
+}
+
+h2 {
+    color: #34513d;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.description {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#message {
+    color: #34513d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffdfb;
+    border: 1px solid #c9d9c0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #c9d9c0;
+    font-size: 13px;
+    text-align: left;
+}
+
+th {
+    background-color: #edf4e8;
+    color: #34513d;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ead3d9;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #fffdfb;
+}
+
+button {
+    padding: 6px 12px;
+    background-color: #e47e97;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #c95778;
+}
+
+span.pending {
+    background-color: #f9e6d8;
+    color: #d98a70;
+    border: 1px solid #d98a70;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+span.processing {
+    background-color: #fce8ee;
+    color: #c95778;
+    border: 1px solid #e47e97;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+span.delivered {
+    background-color: #edf4e8;
+    color: #5f8b55;
+    border: 1px solid #7da875;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.footer {
+    background-color: #2b3028;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: auto;
+}

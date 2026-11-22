@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Processing Notes</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/notes.css">
+    <script src="../js/notes.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+        <p>Order Processing Notes</p>
+    </div>
+
+    <div class="navbar">
+        <a href="staff-dashboard.html">Dashboard</a>
+        <a href="staff-orders.html">Orders</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="completed.html">Completed</a>
+        <a href="staff-profile.html">Profile</a>
+        <a href="staff.html">Logout</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Add Processing Note</h2>
+        <p class="description">Add special instructions or tailoring notes for customer orders.</p>
+
+        <form onsubmit="return addOrderNote()" class="noteform">
+            <table>
+                <tr>
+                    <td><label for="orderId">Order ID</label></td>
+                    <td><input type="text" id="orderId" placeholder="e.g. ORD-101" required></td>
+                </tr>
+                <tr>
+                    <td><label for="noteText">Note Details</label></td>
+                    <td><textarea id="noteText" rows="3" placeholder="Enter special instructions or notes..." required></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Add Note</button></td>
+                </tr>
+            </table>
+            <p id="message"></p>
+        </form>
+
+        <h2>Current Notes</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Note Details</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="notesTableBody">
+                <tr>
+                    <td>ORD-101</td>
+                    <td>Customer requested special gift wrapping.</td>
+                    <td><button type="button" class="deletebutton" onclick="deleteNote(this)">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>ORD-102</td>
+                    <td>Replaced size M with size L after confirmation.</td>
+                    <td><button type="button" class="deletebutton" onclick="deleteNote(this)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Clothing Brand Management System</p>
+    </div>
+
+</body>
+</html>
