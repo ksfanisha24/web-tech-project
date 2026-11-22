@@ -1,0 +1,182 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #fff3f5;
+    color: #2b3028;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    padding: 20px;
+    background-color: #e98da3;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #5f8b55;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #e47e97;
+}
+
+.main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1;
+}
+
+h2 {
+    color: #5f8b55;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.checkoutform {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fffdfb;
+    border: 2px solid #ead3d9;
+}
+
+h3 {
+    color: #34513d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+
+input[type="text"],
+input[type="tel"] {
+    width: 185px;
+    max-width: 100%;
+}
+
+textarea {
+    width: 230px;
+    max-width: 100%;
+}
+
+select {
+    max-width: 100%;
+}
+
+
+.ordersummary {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #e3efdc;
+    border: 1px solid #bfd5b4;
+    border-radius: 5px;
+}
+
+.ordersummary h3 {
+    margin-top: 0;
+}
+
+.ordersummary p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.ordersummary .total {
+    padding-top: 15px;
+    border-top: 1px solid #bfd5b4;
+    color: #c95778;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.buttonsection {
+    margin-top: 25px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e47e97;
+    color: white;
+    border: 1px solid #ead3d9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c95778;
+}
+
+
+.backlink {
+    text-align: center;
+}
+
+.backlink a {
+    color: #5f8b55;
+}
+
+.backlink a:hover {
+    color: #34513d;
+}
+
+
+.footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: #5f8b55;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Customer Profile</title>
+
+    <link rel="stylesheet" href="../css/CustomerProfile.css">
+    <link rel="icon" href="../images/favicon.png">
+
+    <script src="../js/CustomerProfile.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Clothing Brand Management System</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="CustomerHome.html">Home</a>
+        <a href="CustomerProducts.html">Products</a>
+        <a href="CustomerCart.html">Cart</a>
+        <a href="CustomerProfile.html" class="active">My Profile</a>
+    </div>
+
+    <div class="main">
+
+        <h2>Customer Profile</h2>
+
+        <p class="description">
+            View your personal information.
+        </p>
+
+        <div class="profilecontainer">
+
+            <div class="profileheader">
+
+                <div class="profileavatar" id="avatar">M</div>
+
+                <div class="profiletitle">
+                    <h2 id="profilename">Mim</h2>
+                    <p>Customer</p>
+                </div>
+
+            </div>
+
+            <table class="infotable">
+
+                <tr>
+                    <th scope="row">Name</th>
+                    <td id="name">Mim</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Email</th>
+                    <td id="email">mim@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Phone Number</th>
+                    <td id="phone">01816627298</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Address</th>
+                    <td id="address">Dhaka, Bangladesh</td>
+                </tr>
+
+            </table>
+
+            <div class="buttonsection">
+                <button type="button" id="editbutton"
+                    onclick="editProfile()">
+                    Edit Profile
+                </button>
+            </div>
+
+            <p id="profilemessage"></p>
+
+            <div class="passwordsection">
+
+                <h3>Change Password</h3>
+
+                <form action="" method="post"
+                    onsubmit="return validatePassword()">
+
+                    <table class="passwordtable">
+
+                        <tr>
+                            <td>
+                                <label for="currentpassword">
+                                    Current Password
+                                </label>
+                            </td>
+
+                            <td>
+                                <input
+                                    type="password"
+                                    id="currentpassword"
+                                    name="current_password"
+                                    autocomplete="current-password"
+                                    placeholder="Enter current password"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="newpassword">
+                                    New Password
+                                </label>
+                            </td>
+
+                            <td>
+                                <input
+                                    type="password"
+                                    id="newpassword"
+                                    name="new_password"
+                                    autocomplete="new-password"
+                                    placeholder="Enter new password"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="confirmpassword">
+                                    Confirm Password
+                                </label>
+                            </td>
+
+                            <td>
+                                <input
+                                    type="password"
+                                    id="confirmpassword"
+                                    name="confirm_password"
+                                    autocomplete="new-password"
+                                    placeholder="Enter new password again"
+                                    required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+
+                            <td>
+                                <button type="submit">
+                                    Update Password
+                                </button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <p id="passwordmessage"></p>
+
+                </form>
+
+            </div>
+
+            <div class="buttonsection">
+                <button type="button"
+                    onclick="window.location.href='CustomerRegistration.html'">
+                    Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Customer Profile | All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>
