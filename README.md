@@ -16,7 +16,7 @@ Located in `admin-mid-codes/`
 * **Admin Profile:** Admin account details and credential management.
 
 ### 2. Manager Module (Member 2)
-Located in `html/`, `css/`, `js/`, `images/`
+Located in `manager-mid-codes/`
 * **Manager Registration & Login:** Dedicated authentication for store managers.
 * **Manager Dashboard:** Overview of store inventory, activities, and quick access cards.
 * **Inventory Management:** Stock tracking, updates, and product replenishment logs.
