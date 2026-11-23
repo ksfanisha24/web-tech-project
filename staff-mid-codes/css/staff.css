@@ -1,22 +1,25 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: #fff3f5;
+    font-family: Arial, sans-serif;
+    background: #fff3f5;
     color: #2b3028;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.header, h2, .description, #message, .bottomlink, .footer {
+    text-align: center;
+}
+
 .header {
-    background-color: #e98da3;
+    background: #e98da3;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
 .header h1 {
@@ -25,79 +28,65 @@ body {
 }
 
 .header p {
-    margin-top: 6px;
-    margin-bottom: 0;
+    margin: 6px 0 0;
     font-size: 15px;
 }
 
 .main {
     max-width: 500px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
     padding: 20px;
     flex: 1;
 }
 
 h2 {
-    text-align: center;
     color: #34513d;
     margin-bottom: 8px;
 }
 
 .description {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 .loginform {
-    background-color: #fffdfb;
+    background: #fffdfb;
     border: 1px solid #ead3d9;
     padding: 25px;
     border-radius: 4px;
 }
 
-table {
+.main, table, input, button {
     width: 100%;
 }
 
-td {
+td, input {
     padding: 8px;
 }
 
 input {
-    width: 100%;
-    padding: 8px;
     border: 1px solid #ead3d9;
     border-radius: 3px;
-    background-color: #fffdfb;
+    background: #fffdfb;
 }
 
 button {
-    width: 100%;
     padding: 10px;
-    background-color: #e47e97;
+    background: #e47e97;
     color: white;
     border: none;
     border-radius: 3px;
 }
 
 button:hover {
-    background-color: #c95778;
+    background: #c95778;
 }
 
 #message {
-    text-align: center;
     color: #c95778;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 10px 0 0;
 }
 
 .bottomlink {
-    text-align: center;
     margin-top: 20px;
 }
 
@@ -111,10 +100,8 @@ button:hover {
 }
 
 .footer {
-    background-color: #2b3028;
+    background: #2b3028;
     color: white;
-    text-align: center;
     padding: 14px;
     font-size: 12px;
-    margin-top: auto;
 }
